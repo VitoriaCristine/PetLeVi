@@ -7,5 +7,12 @@ hamburger.addEventListener("click", () => {
 });
 
 hamburger.addEventListener('click', function () {
-    sectionToHide.classList.toggle('hidden');
+	if(sectionToHide.classList.contains("hidden"))
+		setTimeout(coisar, 700);
+	else
+		coisar();
 });
+
+function coisar() {
+	sectionToHide.classList.toggle('hidden');
+}
