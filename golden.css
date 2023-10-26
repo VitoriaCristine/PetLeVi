@@ -16,6 +16,12 @@
     --p-font: 1rem;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
 body {
     background-color: #2F4F4F;
     color: var(--text-color);
@@ -252,6 +258,12 @@ header {
 
     .nav.active .nav-list a {
         opacity: 1;
+    }
+
+    .section-golden {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+        transition: 0.5s 0.8s;
     }
 
     .nav.active .hamburger {
