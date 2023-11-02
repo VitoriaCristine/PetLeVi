@@ -270,6 +270,20 @@ ul li:hover {
         margin-left: 20vh;
     }
 
+    .section-contatos li {
+        position: relative;
+        display: block;
+        height: 100px;
+        width: 100px;
+        background: #1b4b4b;
+        line-height: 100px;
+        text-align: center;
+        color: var(--color-contatos);
+        font-size: 3em;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+
     .hamburger {
         display: block;
         z-index: 1;

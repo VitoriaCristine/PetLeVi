@@ -49,6 +49,12 @@ header {
     font-size: 20px;
 }
 
+.section-contatos li {
+    list-style: none;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
 ul {
     display: flex;
 }
@@ -169,6 +175,13 @@ ul li:hover {
 
 @media (max-width: 750px) {
     
+    .section-contatos {
+        height: 20vh;
+        width: 50%;
+        align-items: center;
+        margin-left: 20vh;
+    }
+
     .hamburger {
         display: block;
         z-index: 1;
