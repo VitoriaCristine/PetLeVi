@@ -261,7 +261,7 @@ ul li:hover {
     display: none;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 767px) {
 
     .section-contatos {
         height: 20vh;
