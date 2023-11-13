@@ -62,7 +62,7 @@ ul {
     border: none;
     cursor: pointer;
 
-    background-image: url(assets/icons_carrinho.png);
+    background-image: url(icons_carrinho.png);
     background-size: 35px 35px;
     background-repeat: no-repeat;
     background-position: center;
@@ -75,7 +75,7 @@ ul {
     border: none;
     cursor: pointer;
 
-    background-image: url(assets/icons8-gato-64.png);
+    background-image: url(/icons8-gato-64.png);
     background-size: 35px 35px;
     background-repeat: no-repeat;
     background-position: center;
