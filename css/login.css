@@ -19,15 +19,30 @@ body * {
     flex-direction: row;
 }
 
-.right-login {
+.imagem {
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margem-width: -10000px;
+}
+
+.left-login-imagem {
     width: 45vw;
+}
+
+
+.right-login {
+    width: 30vw;
     height: 80vh;
     display: flex;
     align-items: center;
 }
 
 .card-login {
-    width: 30vw;
+    width: 37vw;
     display: flex;
     justify-content: center;
     align-items: center;
