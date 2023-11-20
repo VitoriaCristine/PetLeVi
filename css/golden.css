@@ -103,6 +103,11 @@ th {
     background-color: transparent;
 }
 
+.contatos {
+    font-size: 3rem;
+    text-align: center;
+}
+
 .section-contatos {
     height: 20vh;
     width: 50%;
