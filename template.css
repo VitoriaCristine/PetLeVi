@@ -86,6 +86,10 @@ img:hover {
     justify-content: center;
 }
 
+a {
+    color: #fff;
+}
+
 .item1 {
     margin-right: 60px;
     justify-content: center;
