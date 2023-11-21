@@ -240,10 +240,11 @@ a {
 }
 
 .section-contatos {
+    display: flex;
+    justify-content: center;
     height: 20vh;
-    width: 50%;
+    width: 100vw;
     align-items: center;
-    margin-left: 77vh;
 }
 
 .section-contatos li {
@@ -274,6 +275,7 @@ ul {
     font-size: 3em;
     border-radius: 50%;
     transition: 0.5s;
+    padding-top: 7px;
 }
 
 ul li::before {
