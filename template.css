@@ -58,7 +58,7 @@ header {
 }
 
 .section-gallery img {
-    width: 35vw;
+    width: 15vw;
     height: auto;
     box-sizing: border-box;
     margin: 1px;
@@ -92,16 +92,98 @@ img:hover {
     cursor: pointer;
 }
 
+.item1 img {
+    width: 15vw;
+    height: 15vw;
+}
+
 .item2 {
     margin-right: 60px;
     justify-content: center;
     cursor: pointer;
 }
 
+.item2 img {
+    width: 15vw;
+    height: 15vw;
+}
+
 .item3 {
     margin-right: 60px;
     justify-content: center;
     cursor: pointer;
+}
+
+.item3 img {
+    width: 15vw;
+    height: 15vw;
+}
+
+.item4 {
+    margin-right: 60px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.item4 img {
+    width: 15vw;
+    height: 15vw;
+}
+
+.acessorios {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.section-acessorios section {
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item1 {
+    margin-right: 60px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.item1 img {
+    width: 15vw;
+    height: 15vw;
+}
+
+.item2 {
+    margin-right: 60px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.item2 img {
+    width: 15vw;
+    height: 15vw;
+}
+
+.item3 {
+    margin-right: 60px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.item3 img {
+    width: 15vw;
+    height: 15vw;
+}
+
+.item4 {
+    margin-right: 60px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.item4 img {
+    width: 15vw;
+    height: 15vw;
 }
 
 .home-text h1 {
@@ -229,11 +311,27 @@ ul li:hover {
 }
 
 .nav-list a {
+    position: relative;
     font-size: 18px;
-    color: var(--text-color);
-    padding-block: 16px;
-    padding-left: 25px;
-    padding-right: 25px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.nav-list a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.nav-list a:hover::before {
+    width: 100%;
 }
 
 .cart-button {
