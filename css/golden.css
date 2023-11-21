@@ -1,96 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
-    text-decoration: none;
-    list-style: none;
-}
-
-:root {
-    --bg-color: var(--bg-color)#2F4F4F;
-    --text-color: #fff;
-    --main-color: #66CDAA;
-    --other-color: #228B22;
-    --h1-font: 4rem;
-    --p-font: 1rem;
-}
-
-body {
-    background-color: #2F4F4F;
-    color: var(--text-color);
-}
-
-header {
-    background: #1b4b4b;
-    padding: 16px;
-    box-shadow: 0px 3px 10px #fff;
-}
-
-.nav {
-    max-width: 1280px;
-    height: 70px;
-    margin-inline: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    color: var(--text-color);
-    font-size: 20px;
-}
-
-.logo img {
-    height: 65px;
-    width: 65px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-ul {
-    display: flex;
-}
-
-.cart-button {
-    background-color: #1b4b4b;
-    color: #fff;
-    padding: 35px 35px;
-    border: none;
-    cursor: pointer;
-
-    background-image: url(icons_carrinho.png);
-    background-size: 35px 35px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.user-button {
-    background-color: #1b4b4b;
-    color: #fff;
-    padding: 35px 35px;
-    border: none;
-    cursor: pointer;
-
-    background-image: url(/icons8-gato-64.png);
-    background-size: 35px 35px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .tabela p {
     font-size: 40px;
-    margin-left: 90vh;
 }
 
 table {
-    width: 70%;
+    width: 100%;
     border-collapse: collapse;
-    margin-left: 60vh;
     margin-bottom: 20px;
+}
+
+.info-nutri{
+    text-align: center;
 }
 
 th, td {
@@ -103,148 +22,43 @@ th {
     background-color: transparent;
 }
 
-.contatos {
-    font-size: 3rem;
-    text-align: center;
-}
-
-.section-contatos {
-    height: 20vh;
-    width: 50%;
-    align-items: center;
-    margin-left: 80vh;
-}
-
-.section-contatos li {
-    list-style: none;
-    margin: 0 15px;
-    cursor: pointer;
-}
-
-.section-contatos li {
-    position: relative;
-    display: block;
-    height: 100px;
-    width: 100px;
-    background: #1b4b4b;
-    line-height: 100px;
-    text-align: center;
-    color: var(--color-contatos);
-    font-size: 3em;
-    border-radius: 50%;
-    transition: 0.5s;
-}
-
-ul li::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: var(--color-contatos);
-    transform: scale(0.9);
-    z-index: -1;
-}
-
-ul li:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 20px var(--color-contatos);
-}
-
-ul li:hover {
-    color: #1b4b4b;
-    box-shadow: 0px 0px 8px var(--color-contatos);
-    text-shadow: 0px 0px 8px var(--color-contatos);
-}
-
-.nav-list {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-}
-
-.nav-list a {
-    font-size: 18px;
-    color: var(--text-color);
-    padding-block: 16px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.hamburger {
-    display: none;
-    border: none;
-    background: none;
-    border-top: 3px solid var(--text-color);
-    cursor: pointer;
-}
-
-.hamburger::before,
-.hamburger::after {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 3px;
-    margin-top: 6px;
-    background: var(--text-color);
-    position: relative;
-    transition: 0.3s;
-}
-
 .home {
     position: relative;
-    height: 100vh;
-    width: 85%;
+    height: auto;
+    width: 100vw;
+    justify-content: center;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+                "a b"
+                "c c"
+                "d d";
     align-items: center;
-    gap: 2rem;
-}
-
-.home-text h1 {
-    font-size: 40px;
-    line-height: 1.2;
-    margin-bottom: 2px;
-}
-
-.home-text h5 {
-    color: #ffffff99;
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 60px;
-}
-
-.home-text h3 {
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
+    grid-template-rows: 0fr 0fr 0fr;
 }
 
 .home-img img {
     max-width: 100%;
     width: 28rm;
     height: auto;
-    margin-left: 25%;
+    margin-left: 0%;
+}
+
+.home-text h1 {
+    font-size: 40px;
+}
+
+.home-text h5 {
+    font-size: 14px;
+}
+
+.home-text h3 {
+    font-size: 40px;
 }
 
 .btn {
-    display: inline-block;
     padding: 15px 70px;
-    font-size: 16px;
     font-weight: 500;
     background: transparent;
-    border: solid 2px var(--text-color);
-    transition: all.5s ease;
-    color: #fff;
-}
-
-.btn:hover {
-    background: var(--text-color);
-    border: 2px solid var(--text-color);
-    color: #000;
 }
 
 .main {
@@ -310,99 +124,7 @@ ul li:hover {
     transform: translateY(-8px);
 }
 
-.hidden {
-    display: none;
-}
-
 @media (max-width: 767px) {
-
-    .section-contatos {
-        height: 20vh;
-        width: 50%;
-        align-items: center;
-        margin-left: 20vh;
-    }
-
-    .section-contatos li {
-        position: relative;
-        display: block;
-        height: 100px;
-        width: 100px;
-        background: #1b4b4b;
-        line-height: 100px;
-        text-align: center;
-        color: var(--color-contatos);
-        font-size: 3em;
-        border-radius: 50%;
-        transition: 0.5s;
-    }
-
-    .hamburger {
-        display: block;
-        z-index: 1;
-    }
-
-    .nav-list {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vw;
-        background: #1b4b4b;
-        clip-path: circle(100px at 90% -15%);
-        transition: 1s ease-out;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 0;
-        pointer-events: none;
-    }
-
-    .nav-list a {
-        font-size: 20px;
-        opacity: 0;
-    }
-
-    .nav-list li:nth-child(1) a {
-        transition: 0.5s 0.2s;
-    }
-
-    .nav-list li:nth-child(2) a {
-        transition: 0.5s 0.4s;
-    }
-
-    .nav-list li:nth-child(3) a {
-        transition: 0.5s 0.6s;
-    }
-
-    .nav-list li:nth-child(4) a {
-        transition: 0.5s 0.8s;
-    }
-
-    .nav.active .nav-list {
-        clip-path: circle(1500px at 90% -15%);
-        pointer-events: all;
-    }
-
-    .nav.active .nav-list a {
-        opacity: 1;
-    }
-
-    .nav.active .hamburger {
-        position: fixed;
-        top: 26px;
-        right: 16px;
-        border-top-color: transparent;
-    }
-
-    .nav.active .hamburger::before {
-        transform: rotate(135deg);
-    }
-
-    .nav.active .hamburger::after {
-        transform: rotate(-135deg);
-        top: -7px;
-    }
 
     .home-text h1 {
         font-size: 30px;

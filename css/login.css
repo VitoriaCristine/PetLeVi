@@ -26,13 +26,11 @@ body * {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margem-width: -10000px;
 }
 
 .left-login-imagem {
     width: 45vw;
 }
-
 
 .right-login {
     width: 30vw;
